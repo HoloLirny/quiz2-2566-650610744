@@ -1,8 +1,4 @@
 export const Reply = ({ userImagePath, username, replyText, likeNum }) => {
-  let l = false;
-  if (likeNum !== 0) {
-    l = true;
-  }
   return (
     <div className="d-flex gap-2 my-2 ps-5">
       <img
@@ -19,7 +15,7 @@ export const Reply = ({ userImagePath, username, replyText, likeNum }) => {
         <span className="fw-semibold">{username}</span>
         <br />
         <span>{replyText}</span>
-        {l ? (
+        {likeNum !== 0 ? (
           <div className="d-flex align-items-center gap-1">
             <img src="/like.svg" width={20}></img>
             <span className="text-muted">{likeNum} คน</span>
