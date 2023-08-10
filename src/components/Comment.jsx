@@ -36,6 +36,7 @@ export const Comment = ({
       </div>
       {replies.map((re) => (
         <Reply
+          key={re.likeNum}
           userImagePath={re.userImagePath}
           username={re.username}
           replyText={re.replyText}

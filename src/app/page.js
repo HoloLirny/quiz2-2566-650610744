@@ -23,6 +23,7 @@ export default function HomePage() {
 
         {comments.map((com) => (
           <Comment
+            key={com.likeNum}
             userImagePath={com.userImagePath}
             username={com.username}
             commentText={com.commentText}
