@@ -18,7 +18,7 @@ export default function HomePage() {
         <PostOwner
           username={"Korarit Pannopasri 650610744"}
           title={"Quiz นี้ง่ายจริงๆ"}
-          likeNum={100000}
+          likeNum={100}
         />
 
         {comments.map((com) => (
